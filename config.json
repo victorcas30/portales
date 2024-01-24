@@ -1,0 +1,6 @@
+{
+    "apiEndpointDev": "https://redmedicaservicetest.devacsa.com/",
+    "apiEndpointToken": "https://authenticate.serviciosacsa.com/Authenticate/GetAccessToken",
+    "user": "PortalReact",
+    "pass": "ACSA2021"
+}
