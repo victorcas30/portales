@@ -1,0 +1,837 @@
+.social-link {
+  text-align: center;
+  margin: 0 1px;
+  width: 20px;
+  text-decoration: none;
+  border: 0;
+  border-width: 0;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar el efecto */
+}
+
+.social-link:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% al pasar el ratón */
+}
+
+.redes-sociales-2 {
+  position: relative;
+}
+
+.logo-2 {
+  max-width: 100%; /* Asegura que el logo no exceda el ancho del contenedor */
+  transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar el efecto */
+}
+
+.logo-2:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% al pasar el ratón */
+}
+
+.logo-3 {
+  max-width: 100%; /* Asegura que el logo no exceda el ancho del contenedor */
+  transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar el efecto */
+}
+
+.logo-3:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al 120% al pasar el ratón */
+}
+
+.line-2 {
+  width: 100%;
+  height: auto; /* Altura ajustada automáticamente */
+  position: relative;
+  display: block; /* Asegura que sea un elemento de bloque */
+}
+
+.pagos-online {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagos-online .div {
+  background-color: var(--neutral-100);
+  overflow: hidden;
+  width: 1440px;
+  height: 600px;
+  position: relative;
+}
+
+.pagos-online .footer {
+  position: absolute;
+  width: 1440px;
+  height: 627px;
+  top: 873px;
+  left: 0;
+  background-color: transparent;
+}
+
+.pagos-online .line {
+  width: 1440px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  height: 1px;
+}
+
+.pagos-online .overlap {
+  position: absolute;
+  width: 350px;
+  height: 149px;
+  top: 91px;
+  left: 116px;
+}
+
+.pagos-online .paragraph {
+  position: absolute;
+  width: 350px;
+  top: 77px;
+  left: 0;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .logo {
+  position: absolute;
+  width: 203px;
+  height: 78px;
+  top: 0;
+  left: 0;
+}
+
+.pagos-online .overlap-group {
+  position: absolute;
+  width: 350px;
+  height: 62px;
+  top: 281px;
+  left: 116px;
+  background-color: var(--neutral-100);
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: var(--neutral-400);
+  box-shadow: var(--inputs-1);
+}
+
+.pagos-online .text-wrapper {
+  position: absolute;
+  width: 118px;
+  top: 15px;
+  left: 17px;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .primary-BTN {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 34px;
+  position: absolute;
+  top: 363px;
+  left: 122px;
+  background-color: var(--primaryazul-acsa);
+  border-radius: 10px;
+}
+
+.pagos-online .button-text {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--buttons-button-font-family);
+  font-weight: var(--buttons-button-font-weight);
+  color: var(--neutral-100);
+  font-size: var(--buttons-button-font-size);
+  text-align: center;
+  letter-spacing: var(--buttons-button-letter-spacing);
+  line-height: var(--buttons-button-line-height);
+  white-space: nowrap;
+  font-style: var(--buttons-button-font-style);
+}
+
+.pagos-online .spacer-delete-if-not {
+  position: relative;
+  width: 3px;
+  height: 2px;
+  background-color: var(--neutral-500);
+  opacity: 0;
+}
+
+.pagos-online .img {
+  width: 1209px;
+  top: 526px;
+  left: 116px;
+  object-fit: cover;
+  position: absolute;
+  height: 1px;
+}
+
+.pagos-online .p {
+  position: absolute;
+  top: 563px;
+  left: 924px;
+  color: transparent;
+  font-size: var(--footer-copyright-text-font-size);
+  text-align: right;
+  letter-spacing: var(--footer-copyright-text-letter-spacing);
+  line-height: var(--footer-copyright-text-line-height);
+  text-decoration: underline;
+  white-space: nowrap;
+  font-family: var(--footer-copyright-text-font-family);
+  font-weight: var(--footer-copyright-text-font-weight);
+  font-style: var(--footer-copyright-text-font-style);
+}
+
+.pagos-online .span {
+  color: #62668a;
+  font-family: var(--footer-copyright-text-font-family);
+  font-style: var(--footer-copyright-text-font-style);
+  font-weight: var(--footer-copyright-text-font-weight);
+  letter-spacing: var(--footer-copyright-text-letter-spacing);
+  line-height: var(--footer-copyright-text-line-height);
+  font-size: var(--footer-copyright-text-font-size);
+}
+
+.pagos-online .text-wrapper-2 {
+  color: #003a84;
+  font-family: var(--footer-copyright-text-font-family);
+  font-style: var(--footer-copyright-text-font-style);
+  font-weight: var(--footer-copyright-text-font-weight);
+  letter-spacing: var(--footer-copyright-text-letter-spacing);
+  line-height: var(--footer-copyright-text-line-height);
+  font-size: var(--footer-copyright-text-font-size);
+}
+
+.pagos-online .group {
+  position: absolute;
+  width: 155px;
+  height: 206px;
+  top: 125px;
+  left: 602px;
+}
+
+.pagos-online .paragraph-2 {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .paragraph-3 {
+  position: absolute;
+  top: 74px;
+  left: 0;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .paragraph-4 {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .paragraph-5 {
+  position: absolute;
+  top: 146px;
+  left: 0;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .paragraph-6 {
+  position: absolute;
+  top: 182px;
+  left: 0;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .paragraph-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--primaryazul-acsa);
+  font-size: var(--other-subtitle-font-size);
+  letter-spacing: var(--other-subtitle-letter-spacing);
+  line-height: var(--other-subtitle-line-height);
+  white-space: nowrap;
+  font-family: var(--other-subtitle-font-family);
+  font-weight: var(--other-subtitle-font-weight);
+  font-style: var(--other-subtitle-font-style);
+}
+
+.pagos-online .group-2 {
+  position: absolute;
+  width: 172px;
+  height: 242px;
+  top: 125px;
+  left: 860px;
+}
+
+.pagos-online .overlap-group-2 {
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  top: 110px;
+  left: 0;
+}
+
+.pagos-online .paragraph-8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .paragraph-9 {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .paragraph-10 {
+  position: absolute;
+  top: 218px;
+  left: 0;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .mi-portal-wrapper {
+  position: absolute;
+  width: 102px;
+  height: 141px;
+  top: 122px;
+  left: 1140px;
+}
+
+.pagos-online .mi-portal {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  position: relative;
+}
+
+.pagos-online .paragraph-11 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  color: var(--primaryazul-acsa);
+  font-size: var(--other-subtitle-font-size);
+  letter-spacing: var(--other-subtitle-letter-spacing);
+  line-height: var(--other-subtitle-line-height);
+  white-space: nowrap;
+  font-family: var(--other-subtitle-font-family);
+  font-weight: var(--other-subtitle-font-weight);
+  font-style: var(--other-subtitle-font-style);
+}
+
+.pagos-online .paragraph-12 {
+  position: relative;
+  width: fit-content;
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .redes-sociales {
+  position: absolute;
+  width: 245px;
+  height: 45px;
+  top: 554px;
+  left: 118px;
+}
+
+.pagos-online .header {
+  background-color: transparent;
+}
+
+.pagos-online .overlap-2 {
+  position: relative;
+  width: 1440px;
+  height: 159px;
+  top: -45px;
+  background-color: var(--neutral-100);
+}
+
+.pagos-online .dropdown {
+  display: flex;
+  width: 73px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  top: 93px;
+  left: 800px;
+}
+
+.pagos-online .nav-link {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--other-nav-link-item-font-family);
+  font-weight: var(--other-nav-link-item-font-weight);
+  color: var(--neutral-700);
+  font-size: var(--other-nav-link-item-font-size);
+  letter-spacing: var(--other-nav-link-item-letter-spacing);
+  line-height: var(--other-nav-link-item-line-height);
+  white-space: nowrap;
+  font-style: var(--other-nav-link-item-font-style);
+}
+
+.pagos-online .group-3 {
+  position: relative;
+  width: 9.23px;
+  height: 5px;
+  margin-right: -0.5px;
+}
+
+.pagos-online .dropdown-2 {
+  width: 93px;
+  left: 649px;
+  display: flex;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  top: 93px;
+}
+
+.pagos-online .nav-link-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  margin-left: -3.11px;
+  font-family: var(--other-nav-link-item-font-family);
+  font-weight: var(--other-nav-link-item-font-weight);
+  color: var(--neutral-700);
+  font-size: var(--other-nav-link-item-font-size);
+  letter-spacing: var(--other-nav-link-item-letter-spacing);
+  line-height: var(--other-nav-link-item-line-height);
+  white-space: nowrap;
+  font-style: var(--other-nav-link-item-font-style);
+}
+
+.pagos-online .group-4 {
+  position: relative;
+  width: 9.23px;
+  height: 5px;
+  margin-right: -3.61px;
+}
+
+.pagos-online .dropdown-3 {
+  width: 128px;
+  left: 930px;
+  display: flex;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  top: 93px;
+}
+
+.pagos-online .primary-BTN-2 {
+  display: flex;
+  width: 90px;
+  height: 50px;
+  padding: 16px 22px;
+  position: absolute;
+  top: 77px;
+  left: 1204px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaryazul-acsa);
+  border-radius: 10px;
+}
+
+.pagos-online .button-text-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  margin-left: -6px;
+  margin-right: -6px;
+  font-family: var(--buttons-small-button-font-family);
+  font-weight: var(--buttons-small-button-font-weight);
+  color: var(--neutral-100);
+  font-size: var(--buttons-small-button-font-size);
+  text-align: center;
+  letter-spacing: var(--buttons-small-button-letter-spacing);
+  line-height: var(--buttons-small-button-line-height);
+  white-space: nowrap;
+  font-style: var(--buttons-small-button-font-style);
+}
+
+.pagos-online .logo-2 {
+  position: absolute;
+  width: 179px;
+  height: 69px;
+  top: 66px;
+  left: 116px;
+}
+
+.pagos-online .group-5 {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 88px;
+  left: 1114px;
+}
+
+.pagos-online .emergencias {
+  position: absolute;
+  top: 18px;
+  left: 118px;
+  font-family: var(--other-blog-card-date-font-family);
+  font-weight: var(--other-blog-card-date-font-weight);
+  color: var(--neutral-600);
+  font-size: var(--other-blog-card-date-font-size);
+  letter-spacing: var(--other-blog-card-date-letter-spacing);
+  line-height: var(--other-blog-card-date-line-height);
+  white-space: nowrap;
+  font-style: var(--other-blog-card-date-font-style);
+}
+
+.pagos-online .redes-sociales-2 {
+  position: absolute;
+  width: 144px;
+  height: 26px;
+  top: 13px;
+  left: 1159px;
+}
+
+.pagos-online .overlap-3 {
+  position: absolute;
+  width: 1478px;
+  height: 509px;
+  top: 210px;
+  left: -18px;
+}
+
+.pagos-online .overlap-4 {
+  position: absolute;
+  width: 1478px;
+  height: 509px;
+  top: 0;
+  left: 0;
+}
+
+.pagos-online .rectangle {
+  position: absolute;
+  width: 1478px;
+  height: 102px;
+  top: 45px;
+  left: 0;
+  background-color: var(--primaryazul-acsa);
+}
+
+.rectangle-a {
+  height: 102px;
+  background-color: var(--primaryazul-acsa);
+  margin-bottom: -100px; /* Ajusta según sea necesario */
+}
+
+.pagos-online .telefono-pagos {
+  position: absolute;
+  width: 614px;
+  height: 509px;
+  top: 0;
+  left: 706px;
+}
+
+.pagos-online .text-wrapper-3 {
+  position: absolute;
+  top: 72px;
+  left: 189px;
+  font-family: var(--headings-h1-font-family);
+  font-weight: var(--headings-h1-font-weight);
+  color: var(--secondaryblanco-acsa);
+  font-size: var(--headings-h1-font-size);
+  letter-spacing: var(--headings-h1-letter-spacing);
+  line-height: var(--headings-h1-line-height);
+  white-space: nowrap;
+  font-style: var(--headings-h1-font-style);
+}
+
+.text-wrapper-3-a {
+  font-family: var(--headings-h1-font-family);
+  font-weight: var(--headings-h1-font-weight);
+  color: var(--secondaryblanco-acsa);
+  font-size: var(--headings-h1-font-size);
+  letter-spacing: var(--headings-h1-letter-spacing);
+  line-height: var(--headings-h1-line-height);
+  white-space: nowrap;
+  font-style: var(--headings-h1-font-style);
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .text-wrapper-3-a {
+    font-size: 40px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+  .rectangle-a {
+    margin-bottom: -60px; /* Ajusta según sea necesario */
+  }
+  .group-6-a {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .text-wrapper-3-a {
+    font-size: 40px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+  .rectangle-a {
+    margin-bottom: -40px; /* Ajusta según sea necesario */
+  }
+  .group-6-a {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .text-wrapper-3-a {
+    font-size: 40px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+  .rectangle-a {
+    margin-bottom: -20px; /* Ajusta según sea necesario */
+  }
+  .group-6-a {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .text-wrapper-3-a {
+    font-size: 40px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+  .rectangle-a {
+    margin-bottom: 0px; /* Ajusta según sea necesario */
+  }
+  .group-6-a {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-wrapper-3-a {
+    font-size: 40px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+  .rectangle-a {
+    margin-bottom: 0px; /* Ajusta según sea necesario */
+  }
+  .group-6-a {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-wrapper-3-a {
+    font-size: 30px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
+  .rectangle-a {
+    margin-bottom: 0px; /* Ajusta según sea necesario */
+  }
+  .group-6-a {
+    width: 400px;
+  }
+}
+
+.pagos-online .group-6 {
+  position: absolute;
+  width: 541px;
+  height: 53px;
+  top: 359px;
+  left: 184px;
+  background-color: var(--neutral-100);
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: var(--neutral-400);
+  box-shadow: var(--inputs-1);
+}
+
+.group-6-a {
+  width: 541px;
+  height: 53px;
+
+  background-color: var(--neutral-100);
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: var(--neutral-400);
+  box-shadow: var(--inputs-1);
+}
+
+.pagos-online .text-wrapper-4 {
+  position: absolute;
+  top: 174px;
+  left: 184px;
+  font-family: var(--headings-h2-font-family);
+  font-weight: var(--headings-h2-font-weight);
+  color: var(--primaryazul-acsa);
+  font-size: var(--headings-h2-font-size);
+  letter-spacing: var(--headings-h2-letter-spacing);
+  line-height: var(--headings-h2-line-height);
+  white-space: nowrap;
+  font-style: var(--headings-h2-font-style);
+}
+
+.text-wrapper-4-a {
+  font-family: var(--headings-h2-font-family);
+  font-weight: var(--headings-h2-font-weight);
+  color: var(--primaryazul-acsa);
+  font-size: var(--headings-h2-font-size);
+  letter-spacing: var(--headings-h2-letter-spacing);
+  line-height: var(--headings-h2-line-height);
+  white-space: nowrap;
+  font-style: var(--headings-h2-font-style);
+}
+
+.pagos-online .text-wrapper-5 {
+  position: absolute;
+  top: 216px;
+  left: 184px;
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  color: var(--primaryazul-acsa);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-style: var(--paragraph-default-font-style);
+}
+
+.text-wrapper-5-a {
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  color: var(--primaryazul-acsa);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-style: var(--paragraph-default-font-style);
+}
+
+.pagos-online .primary-BTN-wrapper {
+  position: absolute;
+  width: 126px;
+  height: 60px;
+  top: 442px;
+  left: 184px;
+}
+
+.primary-BTN-wrapper-a {
+  position: absolute;
+  width: 126px;
+  height: 60px;
+  top: 442px;
+  left: 184px;
+}
+
+
+.pagos-online .primary-BTN-3 {
+  display: inline-flex;
+  padding: 20px 34px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primaryazul-acsa);
+  border-radius: 10px;
+}
+
+.pagos-online .ingresar-DUI-para {
+  position: absolute;
+  width: 325px;
+  top: 296px;
+  left: 184px;
+  font-family: var(--paragraph-small-font-family);
+  font-weight: var(--paragraph-small-font-weight);
+  color: var(--neutral-600);
+  font-size: var(--paragraph-small-font-size);
+  letter-spacing: var(--paragraph-small-letter-spacing);
+  line-height: var(--paragraph-small-line-height);
+  font-style: var(--paragraph-small-font-style);
+}
+
+.ingresar-DUI-para-a {
+  font-family: var(--paragraph-small-font-family);
+  font-weight: var(--paragraph-small-font-weight);
+  color: var(--neutral-600);
+  font-size: var(--paragraph-small-font-size);
+  letter-spacing: var(--paragraph-small-letter-spacing);
+  line-height: var(--paragraph-small-line-height);
+  font-style: var(--paragraph-small-font-style);
+}

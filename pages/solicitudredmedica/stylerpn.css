@@ -1,0 +1,289 @@
+.ACSA-red-medica {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height:100%
+}
+
+.ACSA-red-medica .div {
+  background-color: var(--neutral-100);
+  overflow: hidden;
+  width: 1440px;
+  height: 2581px;
+  position: relative;
+}
+
+.line-2 {
+  width: 100%;
+  height: auto; /* Altura ajustada automáticamente */
+  position: relative;
+  display: block; /* Asegura que sea un elemento de bloque */
+}
+
+.header {
+  top: 47px;
+  left: 0;
+  background-color: transparent;
+}
+
+.social-link {
+  text-align: center;
+  margin: 0 1px;
+  width: 20px;
+  text-decoration: none;
+  border: 0;
+  border-width: 0;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar el efecto */
+}
+
+.social-link:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% al pasar el ratón */
+}
+
+.redes-sociales-2 {
+  position: relative;
+}
+
+.logo-2 {
+  max-width: 100%; /* Asegura que el logo no exceda el ancho del contenedor */
+  transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar el efecto */
+}
+
+.logo-2:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% al pasar el ratón */
+}
+
+.logo-3 {
+  max-width: 100%; /* Asegura que el logo no exceda el ancho del contenedor */
+  transition: transform 0.3s ease-in-out; /* Agrega una transición para suavizar el efecto */
+}
+
+.logo-3:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al 120% al pasar el ratón */
+}
+
+.overlap-3 {
+  position: relative; /* Cambiado a relativo para fluir con el contenido */
+}
+
+.rectangle {
+  width: 100%;
+  height: 100%; /* Ajusta la altura según tus necesidades */
+  background-color: var(--neutral-200);
+  top: 20px;
+  left: 0;
+  z-index: -1; /* Hace que el rectángulo esté detrás de las columnas */
+}
+
+.undraw-medicine-b {
+  width: 100%;
+  height: auto;
+}
+
+.red-de-atenci-n-m {
+  font-family: var(--headings-h1-font-family);
+  font-weight: var(--headings-h1-font-weight);
+  color: var(--primaryazul-acsa);
+  font-size: var(--headings-h1-font-size);
+  letter-spacing: var(--headings-h1-letter-spacing);
+  line-height: var(--headings-h1-line-height);
+  font-style: var(--headings-h1-font-style);
+}
+
+.heading {
+  text-shadow: 0px 2px 4px #de294a0d;
+  font-weight: 400;
+  color: var(--primaryazul-acsa);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  font-family: "Roboto", Helvetica;
+  line-height: 32px;
+  box-shadow: var(--titles-heading-h1);
+
+  /* Añadir estas propiedades para centrar vertical y horizontalmente */
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.text-wrapper-3 {
+  font-family: var(--paragraphs-large-mobile-font-family);
+  font-weight: var(--paragraphs-large-mobile-font-weight);
+  color: #003a84;
+  font-size: var(--paragraphs-large-mobile-font-size);
+  letter-spacing: var(--paragraphs-large-mobile-letter-spacing);
+  line-height: var(--paragraphs-large-mobile-line-height);
+  font-style: var(--paragraphs-large-mobile-font-style);
+}
+
+.text-wrapper-4 {
+  font-weight: 700;
+  text-shadow: 0px 2px 4px #de294a0d;
+  color: var(--primaryazul-acsa);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  font-family: "Roboto", Helvetica;
+  line-height: 32px;
+}
+
+.radio-wrapper {
+  margin-right: 10px; /* Puedes ajustar el valor según tus preferencias */
+}
+
+.text-wrapper-6 {
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  color: var(--primaryazul-acsa);
+  font-size: var(--paragraph-default-font-size);
+  text-align: center;
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  white-space: nowrap;
+  font-style: var(--paragraph-default-font-style);
+}
+
+@media screen and (max-width: 720px) {
+  .text-wrapper-6 {
+    font-size: 14px;
+  }
+  .red-de-atenci-n-m {
+    font-size: var(--headings-h2-font-size);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .text-wrapper-6 {
+    font-size: 14px;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+#nombreBusqueda {
+  width: 100%;
+}
+
+.text-wrapper-5 {
+  font-family: var(--other-subtitle-font-family);
+  font-weight: var(--other-subtitle-font-weight);
+  color: var(--primaryazul-acsa);
+  font-size: var(--other-subtitle-font-size);
+  letter-spacing: var(--other-subtitle-letter-spacing);
+  line-height: var(--other-subtitle-line-height);
+  white-space: nowrap;
+  font-style: var(--other-subtitle-font-style);
+}
+
+.heading-h {
+  font-weight: var(--headings-h5-font-weight);
+  color: var(--neutral-700);
+  font-size: var(--headings-h5-font-size);
+  letter-spacing: var(--headings-h5-letter-spacing);
+  white-space: nowrap;
+  font-family: var(--headings-h5-font-family);
+  line-height: var(--headings-h5-line-height);
+  font-style: var(--headings-h5-font-style);
+}
+
+.heading-3 {
+  text-shadow: 0px 2px 4px #de294a0d;
+  font-weight: var(--headings-h3-font-weight);
+  font-size: var(--headings-h3-font-size);
+  letter-spacing: var(--headings-h3-letter-spacing);
+  line-height: var(--headings-h3-line-height);
+  font-family: var(--headings-h3-font-family);
+  color: var(--neutral-700);
+  font-style: var(--headings-h3-font-style);
+  box-shadow: var(--titles-heading-h3);
+}
+
+.icono-grande {
+  width: 100px; /* Ajusta el ancho del icono según tu preferencia */
+  height: 100px; /* Ajusta la altura del icono según tu preferencia */
+}
+
+.medicoEspecialidad {
+  font-family: var(--other-subtitle-font-family);
+  font-weight: var(--other-subtitle-font-weight);
+  color: var(--primaryazul-acsa);
+  font-size: var(--other-subtitle-font-size);
+  letter-spacing: var(--other-subtitle-letter-spacing);
+  line-height: var(--other-subtitle-line-height);
+  white-space: nowrap;
+  font-style: var(--other-subtitle-font-style);
+}
+
+.paragraph-16 {
+  color: var(--neutral-600);
+  font-size: var(--paragraph-default-font-size);
+  letter-spacing: var(--paragraph-default-letter-spacing);
+  line-height: var(--paragraph-default-line-height);
+  font-family: var(--paragraph-default-font-family);
+  font-weight: var(--paragraph-default-font-weight);
+  font-style: var(--paragraph-default-font-style);
+}
+
+.shaded-container {
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad 0.8 */
+  padding: 20px; /* Ajusta según sea necesario */
+  border-radius: 10px; /* Esquinas redondeadas para un efecto más suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra difuminada */
+}
+
+#radio-container {
+  word-wrap: break-word;
+}
+
+.radio-container {
+  word-wrap: break-word;
+}
+
+a.no-link-style {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color del texto del contenedor padre */
+  cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+
+/* Estilos personalizados para el modal de respuesta */
+#respuestaModal {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+#respuestaModal .modal-header {
+  background-color: #003a84; /* Color de fondo del encabezado */
+  color: #fff; /* Color del texto del encabezado */
+  border-radius: 10px 10px 0 0; /* Bordes redondeados solo arriba */
+}
+
+#respuestaModal .modal-body {
+  padding: 20px; /* Espaciado interno del cuerpo del modal */
+}
+
+#respuestaModal .modal-footer {
+  background-color: #f8f9fa; /* Color de fondo del pie del modal */
+  border-top: 1px solid #dee2e6; /* Borde superior del pie del modal */
+  border-radius: 0 0 10px 10px; /* Bordes redondeados solo abajo */
+}
+
+#respuestaModal .btn-secondary {
+  color: #fff; /* Color del texto del botón Cerrar */
+  background-color: #6c757d; /* Color de fondo del botón Cerrar */
+  border: 1px solid #6c757d; /* Borde del botón Cerrar */
+}
+
+#respuestaModal .btn-secondary:hover {
+  background-color: #5a6268; /* Color de fondo del botón Cerrar al pasar el ratón */
+  border: 1px solid #5a6268; /* Borde del botón Cerrar al pasar el ratón */
+}
