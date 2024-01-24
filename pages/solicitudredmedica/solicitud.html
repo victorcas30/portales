@@ -398,6 +398,20 @@
                             </div>
                           </div>
                           </div>
+
+                          <p>CAMARA</p>
+                          <input type="file" accept="image/*" capture="camera"><br>
+
+
+                          <p>CAMARA Y CARRRETE</p>
+                          <input type="file" accept="image/*;capture=camera" />
+
+                          <p>FILE</p>
+                          <input type="file" accept="capture=camera"><br>
+
+
+                          <p>FILE</p>
+                          <input type="file" accept="image/*" />
                       
                           <!-- Botón Guardar Solicitud -->
                           <button class="btn btn-primary btn-lg mx-auto d-block d-md-inline-block mt-3" style="background-color: #003a84; text-align: left;" type="submit">
@@ -410,25 +424,25 @@
         </main>
 
 
-<!-- Modal -->
-<div class="modal fade" id="respuestaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5">
-          <i class="fa-duotone fa-badge-check text-seconday me-2"></i> Solicitud Registrada Correctamente
-        </h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" id="respuestaModalBody">
-        <!-- Contenido de la respuesta de la API -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- Modal -->
+        <div class="modal fade" id="respuestaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">
+                  <i class="fa-duotone fa-badge-check text-seconday me-2"></i> Solicitud Registrada Correctamente
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="respuestaModalBody">
+                <!-- Contenido de la respuesta de la API -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
         <footer>
