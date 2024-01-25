@@ -422,6 +422,25 @@
                           <input type="file" accept=".pdf, .doc, .docx" />
 
 
+                          <input type="file" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                          <p>FILE7</p>
+
+                          <input type="file" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" disabled="disabled" />
+                          <p>FILE8</p>
+
+
+<script>
+  document.querySelector("input[type='file']").addEventListener("change", function() {
+    var files = this.files;
+    for (var i = 0; i < files.length; i++) {
+      if (!files[i].type.match(/^(application\/pdf|application\/msword|application\/vnd\.openxmlformats-officedocument\.wordprocessingml\.document)$/)) {
+        this.value = "";
+      }
+    }
+  });
+</script>
+
+
 
                       
                           <!-- Botón Guardar Solicitud -->
