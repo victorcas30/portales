@@ -429,28 +429,43 @@
                           <p>FILE8</p>
                           <input type="file" id="documentoInput" accept=".pdf, .doc, .docx" capture="filesystem">
 
-                          <script>
-                            // Verificar si el dispositivo es móvil
-                            function isMobileDevice() {
-                              return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-                            }
-                        
-                            // Obtener el elemento de entrada de archivos
-                            var documentoInput = document.getElementById('documentoInput');
-                        
-                            // Añadir un evento de cambio al elemento de entrada de archivos
-                            documentoInput.addEventListener('change', function() {
-                              // Verificar si el dispositivo es móvil
-                              if (isMobileDevice()) {
-                                // Si es móvil, deseleccionar cualquier archivo de imagen
-                                if (documentoInput.accept.includes('image')) {
-                                  alert('Seleccionar imágenes no permitido en dispositivos móviles. Por favor, seleccione un documento.');
-                                  documentoInput.value = ''; // Limpiar la selección de archivos
-                                }
-                              }
-                            });
-                          </script>
 
+
+                        <script>
+                          document.querySelector("input[type='file']").addEventListener("change", function() {
+                            var files = this.files;
+                            for (var i = 0; i < files.length; i++) {
+                              if (!files[i].type.match(/^(application\/pdf|application\/msword|application\/vnd\.openxmlformats-officedocument\.wordprocessingml\.document)$/)) {
+                                this.value = "";
+                              }
+                            }
+                          });
+                        </script>
+
+
+<input type="file" id="documentoInput" accept=".pdf, .doc, .docx" capture="filesystem">
+
+<script>
+  // Verificar si el dispositivo es móvil
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
+  // Obtener el elemento de entrada de archivos
+  var documentoInput = document.getElementById('documentoInput');
+
+  // Añadir un evento de cambio al elemento de entrada de archivos
+  documentoInput.addEventListener('change', function() {
+    // Verificar si el dispositivo es móvil
+    if (isMobileDevice()) {
+      // Si es móvil, deseleccionar cualquier archivo de imagen
+      if (documentoInput.accept.includes('image')) {
+        alert('Seleccionar imágenes no permitido en dispositivos móviles. Por favor, seleccione un documento.');
+        documentoInput.value = ''; // Limpiar la selección de archivos
+      }
+    }
+  });
+</script>
 
 
                       
