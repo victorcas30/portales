@@ -398,77 +398,6 @@
                             </div>
                           </div>
                           </div>
-
-                          <p>CAMARA</p>
-                          <input type="file" accept="image/*" capture="camera"><br>
-
-
-                          <p>CAMARA Y CARRRETE</p>
-                          <input type="file" accept="image/*;capture=camera" />
-
-                          <p>FILE</p>
-                          <input type="file" accept="capture=camera"><br>
-
-
-                          <p>FILE</p>
-                          <input type="file" accept="image/*" />
-
-                          <p>FILE</p>
-                          <input type="file" class="form-control" id="cv" accept=".pdf, .docx, .doc, image/*, video/*" capture="filesystem" required>
-
-                          <input type="file" class="form-control" id="cv" accept=".pdf, .docx, .doc" required>
-
-                          <input type="file" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-                          <input type="file" accept=".pdf, .doc, .docx" />
-
-
-                          <input type="file" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-                          <p>FILE7</p>
-
-                          <input type="file" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-                          <p>FILE8</p>
-                          <input type="file" id="documentoInput" accept=".pdf, .doc, .docx" capture="filesystem">
-
-
-
-                        <script>
-                          document.querySelector("input[type='file']").addEventListener("change", function() {
-                            var files = this.files;
-                            for (var i = 0; i < files.length; i++) {
-                              if (!files[i].type.match(/^(application\/pdf|application\/msword|application\/vnd\.openxmlformats-officedocument\.wordprocessingml\.document)$/)) {
-                                this.value = "";
-                              }
-                            }
-                          });
-                        </script>
-
-
-<input type="file" id="documentoInput" accept=".pdf, .doc, .docx" capture="filesystem">
-
-<script>
-  // Verificar si el dispositivo es móvil
-  function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-  }
-
-  // Obtener el elemento de entrada de archivos
-  var documentoInput = document.getElementById('documentoInput');
-
-  // Añadir un evento de cambio al elemento de entrada de archivos
-  documentoInput.addEventListener('change', function() {
-    // Verificar si el dispositivo es móvil
-    if (isMobileDevice()) {
-      // Si es móvil, deseleccionar cualquier archivo de imagen
-      if (documentoInput.accept.includes('image')) {
-        alert('Seleccionar imágenes no permitido en dispositivos móviles. Por favor, seleccione un documento.');
-        documentoInput.value = ''; // Limpiar la selección de archivos
-      }
-    }
-  });
-</script>
-
-
-                      
                           <!-- Botón Guardar Solicitud -->
                           <button class="btn btn-primary btn-lg mx-auto d-block d-md-inline-block mt-3" style="background-color: #003a84; text-align: left;" type="submit">
                             <i class="fa-duotone fa-floppy-disk-circle-arrow-right"></i> Guardar Solicitud
@@ -620,6 +549,35 @@
             }
         }
   </script>
+
+<script>
+  $(document).ready(function () {
+      // Asigna una función al evento change del input de archivo
+      $('#cv').change(function () {
+          // Obtiene el nombre del archivo
+          var fileName = $(this).val();
+          
+          // Verifica la extensión del archivo
+          if (isValidFileExtension(fileName)) {
+              // Si es un formato válido, quita la clase de invalid-feedback y oculta el mensaje de error
+              $('#cv').removeClass('is-invalid');
+              $('.invalid-feedback').hide();
+          } else {
+              // Si es un formato inválido, agrega la clase de invalid-feedback y muestra el mensaje de error
+              $('#cv').addClass('is-invalid');
+              $('.invalid-feedback').show();
+          }
+      });
+  
+      // Función para verificar la extensión del archivo
+      function isValidFileExtension(fileName) {
+          var validExtensions = ['.pdf', '.docx', '.doc'];
+          var fileExtension = fileName.substring(fileName.lastIndexOf('.')).toLowerCase();
+          return validExtensions.includes(fileExtension);
+      }
+  });
+  </script>
+  
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
