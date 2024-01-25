@@ -353,11 +353,14 @@ respuestaModalBody.innerHTML = `
 `;
 
 // Mostrar el modal
-$('#respuestaModal').modal('show');
-
+//$('#respuestaModal').modal('show');
+const respuestaModal = new bootstrap.Modal(document.getElementById('respuestaModal'));
+respuestaModal.show();
 // Reiniciar los campos del formulario después de un breve retraso
 setTimeout(() => {
-  $('#respuestaModal').modal('hide');
+  //$('#respuestaModal').modal('hide');
+  respuestaModal.hide();
+
   form.reset();
   form.classList.remove('was-validated'); // Eliminar la clase de validación
 }, 15000); // Ajusta el tiempo de espera según sea necesario
