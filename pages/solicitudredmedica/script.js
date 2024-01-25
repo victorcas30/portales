@@ -293,6 +293,9 @@ if (archivoInput.files.length > 0) {
 
   const reader = new FileReader();
   reader.onload = function(e) {
+    // Log para verificar el resultado de la conversión a base64
+    console.log('Archivo Base64:', e.target.result);
+
     const archivoBase64 = e.target.result;
 
     // Estructura del archivo adjunto
@@ -308,6 +311,7 @@ if (archivoInput.files.length > 0) {
   // Lee el archivo como base64
   reader.readAsDataURL(archivo);
 }
+
 
 // Realizar la solicitud GET para obtener las configuraciones
 fetch('../../config.json')
