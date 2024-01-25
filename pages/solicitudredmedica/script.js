@@ -436,6 +436,21 @@ $(document).ready(function() {
   $('#telefonos').mask('0000-0000', { placeholder: "____-____" });
 });
 
+// Función para leer el archivo como base64 de manera asíncrona
+function readArchivoComoBase64(archivo) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      const archivoBase64 = e.target.result;
+      resolve(archivoBase64);
+    };
+    reader.onerror = function (error) {
+      reject(error);
+    };
+    reader.readAsDataURL(archivo);
+  });
+}
+
 
 
 });
