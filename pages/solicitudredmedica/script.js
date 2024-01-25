@@ -291,25 +291,17 @@ const archivoInput = document.getElementById('cv');
 if (archivoInput.files.length > 0) {
   const archivo = archivoInput.files[0];
 
-  const reader = new FileReader();
-  reader.onload = function(e) {
-    // Log para verificar el resultado de la conversión a base64
-    console.log('Archivo Base64:', e.target.result);
+  // Utilizar una promesa para manejar la operación asíncrona
+  const archivoBase64 = await readArchivoComoBase64(archivo);
 
-    const archivoBase64 = e.target.result;
-
-    // Estructura del archivo adjunto
-    const archivoAdjunto = {
-      "nomarchivo": archivo.name,
-      "rutabase64": archivoBase64
-    };
-
-    // Agrega el archivo adjunto al objeto
-    formObject['archivosadjuntos'] = [archivoAdjunto];
+  // Estructura del archivo adjunto
+  const archivoAdjunto = {
+    "nomarchivo": archivo.name,
+    "rutabase64": archivoBase64
   };
 
-  // Lee el archivo como base64
-  reader.readAsDataURL(archivo);
+  // Agrega el archivo adjunto al objeto
+  formObject['archivosadjuntos'] = [archivoAdjunto];
 }
 
 
