@@ -129,7 +129,7 @@
                           </div>
                             <div class="col-md-6">
                                 <label for="nit" class="form-label">No. NIT</label>
-                                <input type="tel" class="form-control" id="nit" pattern="\d{4}-\d{6}-\d{3}-\d{1}" maxlength="17" required>
+                                <input type="tel" class="form-control" id="nit" pattern="\d{4}-\d{6}-\d{3}-\d{1}" maxlength="17">
                                 <div class="invalid-feedback">
                                   Por favor, ingrese un número de NIT válido (ejemplo: 0000-000000-000-0).
                                 </div>
@@ -147,7 +147,7 @@
                             </div>
                             <div class="col-md-6">
                               <label for="tarjetaiva" class="form-label">No. Tarjeta IVA</label>
-                              <input type="tel" class="form-control" id="tarjetaiva" maxlength="10" required>
+                              <input type="tel" class="form-control" id="tarjetaiva" maxlength="10">
                               <div class="invalid-feedback">
                                 Por favor, ingrese un número de Tarjeta IVA válido.
                               </div>
@@ -390,10 +390,10 @@
                               </div>
                             </div>
                             <div class="col-md-6">
-                              <label for="cv" class="form-label">Adjuntar CV</label>
+                              <label for="cv" class="form-label">Adjuntar CV (Formato pdf o word)</label>
                               <input type="file" class="form-control" id="cv" accept=".pdf, .docx, .doc" capture="filesystem" required>
                               <div class="invalid-feedback">
-                                Por favor, adjunte su currículum.
+                                Por favor, adjunte su currículum en formato pdf o word.
                               </div>
                             </div>
                           </div>
@@ -581,6 +581,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
         
   </body>
 </html>

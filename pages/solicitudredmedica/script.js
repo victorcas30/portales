@@ -214,6 +214,18 @@ fetch('../../config.json')
 })
 .catch(error => console.error('Error cargando configuraciones:', error));
 
+document.getElementById('solicitudForm').addEventListener('submit', function(event) {
+  var inputFile = document.getElementById('cv');
+  var filePath = inputFile.value;
+  var allowedExtensions = /(\.pdf|\.docx|\.doc)$/i;
+
+  if (!allowedExtensions.exec(filePath)) {
+    inputFile.setCustomValidity('Por favor, adjunte su currículum en formato pdf o word.');
+  } else {
+    inputFile.setCustomValidity(''); // Restablece la validación personalizada
+  }
+});
+
 
 const formulario = document.getElementById('solicitudForm');
 
@@ -347,7 +359,8 @@ $('#respuestaModal').modal('show');
 setTimeout(() => {
   $('#respuestaModal').modal('hide');
   form.reset();
-}, 8000); // Ajusta el tiempo de espera según sea necesario
+  form.classList.remove('was-validated'); // Eliminar la clase de validación
+}, 15000); // Ajusta el tiempo de espera según sea necesario
 } else {
 console.error('Error al enviar la solicitud a la API:', respuesta.status);
 // Maneja el error de acuerdo a tus necesidades
@@ -413,5 +426,17 @@ const [hora, minutos] = hora24.split(':');
 const horas12 = (hora % 12) || 12; // Convierte 0 a 12
 return `${horas12}:${minutos}`;
 }
+
+$(document).ready(function() {
+  $('#nit').mask('0000-000000-000-0', { placeholder: "____-______-___-_" });
+});
+$(document).ready(function() {
+  $('#dui').mask('00000000-0', { placeholder: "________-_" });
+});
+$(document).ready(function() {
+  $('#telefonos').mask('0000-0000', { placeholder: "____-____" });
+});
+
+
 
 });
