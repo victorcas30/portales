@@ -349,17 +349,14 @@ respuestaModalBody.innerHTML = `
 `;
 
 // Mostrar el modal
-//$('#respuestaModal').modal('show');
-const respuestaModal = new bootstrap.Modal(document.getElementById('respuestaModal'));
-respuestaModal.show();
+$('#respuestaModal').modal('show');
+
 // Reiniciar los campos del formulario después de un breve retraso
 setTimeout(() => {
-  //$('#respuestaModal').modal('hide');
-  respuestaModal.hide();
-
+  $('#respuestaModal').modal('hide');
   form.reset();
   form.classList.remove('was-validated'); // Eliminar la clase de validación
-}, 15000); // Ajusta el tiempo de espera según sea necesario
+}, 10000); // Ajusta el tiempo de espera según sea necesario
 } else {
 console.error('Error al enviar la solicitud a la API:', respuesta.status);
 // Maneja el error de acuerdo a tus necesidades
