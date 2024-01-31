@@ -214,6 +214,9 @@ window.onload = function () {
     generatecard.addEventListener('click', function () {
         randomCard();
     });
+
+    document.getElementById("generatecard").style.display = "none";
+
     
     
     // CREDIT CARD IMAGE JS
